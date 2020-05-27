@@ -1,8 +1,17 @@
-class TTY::Prompt
+ARR1 = ["one", "two", "three"]
 
-end
+ARR2 = ["one", "two", "four"]
 
-prompt = TTY::Prompt.new 
+ARR3 = ["one", "two", "three"]
 
-prompt.ask('This is a test.')
+def compare
+    if ARR1.join(" ") == ARR2.join(" ")
+        puts "awesome"
+    elsif ARR1.join(" ") == ARR3.join(" ")
+        puts "awesomer"
+    else 
+        return nil 
+    end
+end 
 
+puts compare 

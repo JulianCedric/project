@@ -1,14 +1,16 @@
 class MarvelApp 
     attr_reader :prompt
-    attr_accessor :user, :suit, :sa, :ability, :av, :villain
+    attr_accessor :user, :suit, :sa, :ability, :av, :villain, :asci 
     def initialize()
         @prompt = TTY::Prompt.new
     end
 
     def welcome 
-        # system "clear"
+
+        x = ASCI.new  
         puts "Welcome!"
-        puts ""
+        puts " "
+        puts x.run 
     end
 
     def b_b_or_b
@@ -18,4 +20,4 @@ class MarvelApp
 
     prompt = TTY::Prompt.new 
 
-end 
+end
